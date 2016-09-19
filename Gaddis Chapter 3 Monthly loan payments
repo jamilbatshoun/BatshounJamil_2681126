@@ -1,0 +1,62 @@
+/* 
+ * File:   main.cpp
+ * Author: Jamil Batshoun
+ *
+ * Created on September 19, 2016, 9:52 AM
+ * Purpose: Loan payment calculator. Has two versions present. Interest and
+ * total should end in 40 cents not 15 16 or 4.
+ */
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+
+using namespace std;
+
+const int PERCENT=100;
+const int MONTHS=12;
+
+int main(int argc, char** argv) {
+
+    char nCmPrds=36;//Number of monthly compounding periods
+    float intRate=12;//Percentage per year
+    float loanAmt=1e4f;//$10,000 Loan
+    float monPay;//Monthly Payment $'s
+    float totPaid;//Total Amount Paid $'s
+    float intPaid;//Total Interest Paid $'s
+    
+    
+    intRate/=(PERCENT*MONTHS);
+    float temp=pow((1+intRate),nCmPrds);
+    monPay=intRate*temp*loanAmt/(temp-1);
+    totPaid=nCmPrds*monPay;
+    intPaid=totPaid-loanAmt;
+    
+    cout<<fixed<<setprecision(2)<<showpoint;
+    cout<<"Loan Amount          $:"<<setw(8)<<loanAmt<<endl;
+    cout<<"Interest Rate  %/month:"<<setw(8)<<intRate<<endl;
+    cout<<"Number of Months :"<<static_cast<int>(nCmPrds)<<endl;
+    cout<<"Monthly Payment      $:"<<setw(8)<<monPay<<endl;
+    cout<<"Interest Paid        $:"<<setw(8)<<intPaid<<endl;
+    cout<<"Total Paid           $:"<<setw(8)<<totPaid<<endl;
+    
+    
+     monPay=intRate*temp*loanAmt/(temp-1);
+     int mp=monPay*100+0.5;
+     monPay=mp/100.0f;
+    totPaid=nCmPrds*monPay;
+    intPaid=totPaid-loanAmt;
+    
+    
+     cout<<fixed<<setprecision(2)<<showpoint;
+     cout<<"Using integer values"<<endl;
+    cout<<"Loan Amount          $:"<<setw(8)<<loanAmt<<endl;
+    cout<<"Interest Rate  %/month:"<<setw(8)<<intRate<<endl;
+    cout<<"Number of Months :"<<static_cast<int>(nCmPrds)<<endl;
+    cout<<"Monthly Payment      $:"<<setw(8)<<monPay<<endl;
+    cout<<"Interest Paid        $:"<<setw(8)<<intPaid<<endl;
+    cout<<"Total Paid           $:"<<setw(8)<<totPaid<<endl;
+    return 0;
+    
+}
