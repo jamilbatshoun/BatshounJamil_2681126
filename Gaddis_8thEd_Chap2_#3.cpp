@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
     salesTax=purPrice*tax; //relevent equation
     
     cout<<"The total sales tax of a purchase of $95 with a 4% state sales tax "
-            "and a 2% county sales tax is $"<<salesTax<<endl;
+            "and a 2% county sales tax is $"<<salesTax<<"."<<endl;
     
     return 0;
 }
