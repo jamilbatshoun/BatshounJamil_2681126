@@ -6,7 +6,7 @@
  * Purpose: Chapter 2 programming challenges #1: Compute the sum of 50 and 100.
  */
 
-//System Libraries
+
 #include <iostream>
 
 using namespace std;
