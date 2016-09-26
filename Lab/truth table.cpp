@@ -1,8 +1,8 @@
 /* 
- * File:   main.cpp
- * Author: rcc
- *
+ * File:   truth table.cpp
+ * Author: Jamil Batshoun
  * Created on September 26, 2016, 9:35 AM
+ * Purpose: 13 column truth table
  */
 
 #include <iostream>
