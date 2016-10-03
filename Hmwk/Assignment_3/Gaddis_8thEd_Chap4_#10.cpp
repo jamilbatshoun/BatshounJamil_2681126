@@ -1,4 +1,3 @@
-
 /* 
    File:   main.cpp
    Author: Jamil Batshoun
@@ -30,15 +29,9 @@ int main(int argc, char** argv) {
     switch(month){
         case 1: cout<<"There are 31 days in January, "<<year<<endl;break;
         case 2: {
-            if(year%4!=0){
-                cout<<"There are 28 days in February, "<<year<<endl;
-            }else if(year%400==0){
-                cout<<"There are 29 days in February, "<<year<<endl;
-            }else if(year%100==0){
-                cout<<"There are 28 days in February, "<<year<<endl;
-            }else{
-                cout<<"There are 29 days in February, "<<year<<endl;
-            }
+            cout<<"There are "<<
+                  ((((year%4==0)&&(year%100!=0))||(year%400==0))?"29":"28")<<
+                  " days in February, "<<year<<endl;
             break;
         }
         case 3: cout<<"There are 31 days in March, "<<year<<endl;break;
