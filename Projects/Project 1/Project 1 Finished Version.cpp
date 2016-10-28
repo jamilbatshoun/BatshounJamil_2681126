@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
     
     //Random Number Generator to pick 
     /*const int MIN_VALUE = 1;    //Possible values range from 1 to 5
-    const int MAX_VALUE = 5;
+    const int MAX_VALUE = 2;
     int num;
   
     
