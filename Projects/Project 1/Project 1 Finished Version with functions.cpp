@@ -104,13 +104,13 @@ int main(int argc, char** argv) {
                     else{
                         func2();
                          if(g3==w4||g3==w7){
-                        cout<<"        "<<w19;
+                            cout<<"        "<<w19;
                         }
                         if(g3==w5||g3==w8){
-                        cout<<"        "<<w20;
+                            cout<<"        "<<w20;
                         }
                         if(g3==w6||g3==w9){
-                        cout<<"        "<<w21;
+                            cout<<"        "<<w21;
                         }
                         cout<<endl;
                         cout<<"Try again: ";
@@ -125,14 +125,14 @@ int main(int argc, char** argv) {
                         }
                         else{
                             func3();
-                             if(g3==w4||g3==w7){
-                            cout<<"        "<<w19;
+                            if(g3==w4||g3==w7){
+                                cout<<"        "<<w19;
                             }
                             if(g3==w5||g3==w8){
-                            cout<<"        "<<w20;
+                                cout<<"        "<<w20;
                             }
                             if(g3==w6||g3==w9){
-                            cout<<"        "<<w21;
+                                cout<<"        "<<w21;
                             }
                             cout<<endl;
                             cout<<"Try again: ";
@@ -147,14 +147,14 @@ int main(int argc, char** argv) {
                             }
                             else{
                                 func4();
-                                 if(g3==w4||g3==w7){
-                                cout<<"        "<<w19;
+                                if(g3==w4||g3==w7){
+                                    cout<<"        "<<w19;
                                 }
                                 if(g3==w5||g3==w8){
-                                cout<<"        "<<w20;
+                                    cout<<"        "<<w20;
                                 }
                                 if(g3==w6||g3==w9){
-                                cout<<"        "<<w21;
+                                    cout<<"        "<<w21;
                                 }
                                 cout<<endl;
                                 cout<<"You lost!";
@@ -202,6 +202,40 @@ int main(int argc, char** argv) {
                         }
                         else{
                             func3();
+                            if(g3==w4||g3==w7){
+                                cout<<"        "<<w19;
+                            }
+                            if(g3==w5||g3==w8){
+                                cout<<"        "<<w20;
+                            }
+                            if(g3==w6||g3==w9){
+                                cout<<"        "<<w21;
+                            }
+                            cout<<endl;
+                            cout<<"Make another guess: ";
+                            cin>>g4;
+                            cout<<endl;
+                            g5=g3+g4;
+                            if(g5==w10||g5==w11||g5==w12||g5==w13||g5==w14||g5==w15){
+                                func2();
+                                cout<<"        "<<w10;
+                                cout<<endl;
+                                cout<<"You won!";
+                            }
+                            else{
+                                func4();
+                                if(g3==w4||g3==w7){
+                                    cout<<"        "<<w19;
+                                }
+                                if(g3==w5||g3==w8){
+                                    cout<<"        "<<w20;
+                                }
+                                if(g3==w6||g3==w9){
+                                    cout<<"        "<<w21;
+                                }
+                                cout<<endl;
+                                cout<<"You lost!";
+                            }
                         }
                     }
                 }
