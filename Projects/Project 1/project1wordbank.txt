@@ -1,0 +1,43 @@
+c
+a
+t
+ca
+ct
+at
+ac
+tc
+ta
+cat
+cta
+atc
+act
+tca
+tac
+c__
+_a_
+__t
+ca_
+c_t
+_at
+d
+o
+g
+do
+dg
+og
+od
+gd
+go
+dog
+dgo
+ogd
+odg
+gdo
+god
+d _ _
+_ o _
+_ _ g
+d _ g
+d o _
+_ o g
+d o g
