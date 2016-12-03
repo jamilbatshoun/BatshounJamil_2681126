@@ -12,7 +12,7 @@ using namespace std;
 
 void linsearch(int[],int,int);
 
-int main(int argc, char** argv) {
+int main1(int argc, char** argv) {
     //18 elements in array
     int size = 18;
     //user input
